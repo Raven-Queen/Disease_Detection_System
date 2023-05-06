@@ -32,10 +32,7 @@ nav li a img{
 .button{
     align-items: right;
     float: right;
-} 
-.button:hover{
-    box-shadow: 0 0 2px 0 black;
-} 
+}
 header li {  
     margin: 50px;  
 } 
@@ -55,17 +52,45 @@ nav li a:hover{
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
+    width: fit-content;
 }
+
+#head1{
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 40px;
+}
+#text1{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 #form{
-    margin: 10%;
+    margin: 0 auto;
+}
+.form{
+    margin-left: 10px;
 }
 .image{
     text-align: center;
     align-items: center;
     height: 25px;
-    width: 250px;
+    width: 200px;
     background-color: #D9D9D9;
     border-radius: 5px;
     border-width: 1px;
     margin-left: 100px;
+}
+
+#text2{
+
+    font-size: 20px;
+    font-weight: normal;
+}
+#signin{
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
 }
