@@ -39,7 +39,8 @@ header li a{
     text-decoration: none;
     font-weight:normal;
     font-size: 22px; 
-    vertical-align:bottom; 
+    vertical-align:bottom;
+    color: black; 
 }  
 nav li a:hover{
     color: #046E9A;
@@ -74,26 +75,57 @@ nav li a:hover{
 }
 
 .web2{
-    background-image: url('C:/Users/RavenQueen/Desktop/Nishita/College/Tri-11/Capstone/Application Code/Images/Back2.png');
+    background: url("Images/Back.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 5%;
+    margin-top: 5%;
 }
 #about{
-    background-color: rbga(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.8);
     font-size: 20px;
     font-weight: normal;
     text-align: justify;
+    width: 50%;
+    height:fit-content;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px 0 black;
 }
 #heading2{
     font-size: 40px;
     font-weight: bolder;
+    text-align: center;
+}
+#thead{
+    border-right:1px solid black;
+    width: 40%;
 }
 
 #heading3{
     font-size: 40px;
     font-weight: bold;
-    margin: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#steps{
+    align-items: center;
+    width: 90%;
+    height:fit-content;
+    border-radius: 15px;
+    margin: 0 auto;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    color: #FFFFFF;
+}
+#steps td{
+    align-items: center;
+    background-color: #2298CA;
+    border-radius: 5px;
+}
+#steps td:hover{
+    box-shadow: 0 0 20px 0 black;
 }
 
 #heading4{
@@ -103,6 +135,45 @@ nav li a:hover{
 }
 
 footer{
+    margin-top: 5%;
     background-color: #2298CA;
-    
+    background-size: cover;
+    height: fit-content;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+}
+#foot{
+    margin: 0 auto;
+    width: 100%;
+    vertical-align: bottom;
+}
+#link{
+    float: right;
+    margin-right: 5%;
+    vertical-align: top;
+}
+.links ul{
+    list-style-type: none;
+    vertical-align: top;
+}
+.links ul li{
+    margin-bottom: 30px;
+    vertical-align: top;
+}
+.links ul a{ 
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+#icons{
+    list-style-type: none;
+    float:right;
+    margin-right: 30px;
+}
+#icons li{
+    display: inline-block;
+    margin-right: 50px;
 }
