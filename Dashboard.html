@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href = "Dashboard.html"> <img src = "C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Images\Site Logo.jpg"> </a></li>
+                <li><a href = "Dashboard.html"> Home </a></li>
+                <li><a href = "#"> About </a></li>
+                <li><a href = "#"> Contact Us </a></li>
+            </ul>
+            <ul>
+                <li><a href="Profile.html"><img src="C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Images\Group 14.png" align="right" class="button"></a></li>
+                </a></li> <!-- Php for logout dropdown -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Actual Body -->
+    <table id="dash" cellspacing="100px">
+        <tr><th><div><br> Dashboard </div></th></tr>
+        <tr>
+            <td id="material">
+                <div>
+                Get Easy Diagnosis for Your Eyes: <br><br>
+                We detect: <br>
+                <ol type="1.">
+                    <li><b>Choroidal neovascularization(CNV):</b> Abnormal growth of vessels from the choroidal vasculature to the neurosensory retina.</li>
+                    <li><b>Macular Edema (DME): </b>Excess fluid in the extracellular space within the retina</li>
+                    <li><b>DRUSEN: </b> Yellow deposits under the retina.</li>
+                    <li><b> Normal Eye:</b> Saying you are perfectly fine.</li>
+                </ol>
+                We also tell when its necessary to visit a doctor...
+                </div>
+            </td>
+            <td>
+                <center>
+                    <input type="file" id="oct" style="display:none">
+                    <img src="Images/uploadOCT.png" alt="Upload Image" onclick="document.getElementById('oct').click()">
+                    </center>  
+                    <!-- Php required so that uploaded image is displayed here -->
+                    <br><br>
+                <center> <a href="Dashboard2.html"><input type="image" src="Images/Submit.png" value="Submit"></a> <br><br>
+                 </center>
+                <!-- Php required so that values are submitted -->
+            </td>
+            <td>
+                <table class="files">
+                    <tr><th>Reports</th></tr>
+                    <tr><td><br></td></tr>
+                </table>
+
+                <br><br>
+                <table class="files">
+                    <tr><th>Images</th></tr>
+                    <tr><td><br></td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

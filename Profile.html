@@ -8,51 +8,65 @@
     <link rel="stylesheet" href="profile.css">
 </head>
 <body>
+    <?<php>
+        include("profile.php");
+    </php>
 
     <!-- Navigation Bar -->
     <header>
         <nav>
             <ul>
-                <li><a href = "Home.html"> <img src = "C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Images\Site Logo.jpg"> </a></li>
-                <li><a href = "Home.html"> Home </a></li>
+                <li><a href = "Dashboard.html"> <img src = "C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Images\Site Logo.jpg"> </a></li>
+                <li><a href = "Dashboard.html"> Home </a></li>
                 <li><a href = "#"> About </a></li>
                 <li><a href = "#"> Contact Us </a></li>
             </ul>
             <ul>
                 <li><a href="#"><img src="C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Images\Group 14.png" align="right" class="button"></a></li>
+                <!-- Php required so that logout option is visible after hovering over the image in droupdown -->
                 </a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Actual Body -->
-    <br><br><br><br><br><br>
-    <table class="content"><tr><td>
-        <table id="Form" cellspacing="50px" cellpadding="10px">
+    <br><br><br><br>
+    <table class="content">
+        <tr>
+            <td>
+                <br><br>
+                <center>
+                    <input type="file" id="propic" style="display:none">
+                    <img src="Images/profile.svg" alt="Upload Image" onclick="document.getElementById('propic').click()">
+                    </center>  <!-- Php required so that uploaded image is displayed here -->
+            </td>
+        </tr>
+
+        <tr><td><table id="Form" cellspacing="50px" cellpadding="10px">
             <tr>
                 <td><label for="name">Name</label></td>
-                <td><input type="text" id="name"></td>
+                <td><input type="text" id="name" class="image" ></td>
             </tr>
             <tr>
                 <td><label for="phno">Phone  Number</label></td>
-                <td><input type="number" id="phno" maxlength="10"></td>
+                <td><input type="number" id="phno" maxlength="10" minlength="10" step="1" min="999999999" class="image" onclick="false"></td>
             </tr>
             <tr>
                 <td><label for="email">E- Mail</label></td>
-                <td><input type="text" id="email"></td>
+                <td><input type="email" id="email" class="image" ></td>
             </tr>
             <tr>
                 <td><label for="pass">Password</label></td>
-                <td><input type="text" id="pass"></td>
+                <td><input type="password" id="pass" class="image" ></td>
             </tr>
             <tr>
                 <td><label for="conpass">Confirm Password</label></td>
-                <td><input type="text" id="conpass"></td>
+                <td><input type="password" id="conpass" class="image" ></td>
             </tr>
 
         </table></td></tr>
         <tr>
-            <td><input type="image" src="Images/save changes.png" value="Submit"></td>
+            <td> <center> <a href="Dashboard.html"><input type="image" src="Images/save changes.png" value="Submit"></a> <br><br> </center></td> <!-- Php required so that values are submitted -->
         </tr>
     </table>
 

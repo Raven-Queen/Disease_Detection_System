@@ -36,10 +36,6 @@ nav li a img{
 .button:hover{
     box-shadow: 0 0 2px 0 black;
 } 
-.active{
-    color: #046E9A;
-    font-weight: bold;
-}
 header li {  
     margin: 50px;  
 } 
@@ -63,7 +59,13 @@ nav li a:hover{
 #form{
     margin: 10%;
 }
-.content input{
+.image{
     text-align: center;
     align-items: center;
+    height: 25px;
+    width: 250px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    border-width: 1px;
+
 }
