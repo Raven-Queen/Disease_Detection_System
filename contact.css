@@ -1,0 +1,133 @@
+body {
+  background-image: url(Images/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  text-align: justify;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header {
+  background-color: #FFFFFF;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 80px;
+  align-items: center;
+  box-shadow: 0 0 20px 0 black;
+  border-width: 10px;
+  display: block;
+  overflow: hidden;
+}
+
+header * {
+  display: inline;
+  vertical-align: middle;
+}
+
+nav li a img {
+  margin-right: 5px;
+}
+
+.button {
+  align-items: right;
+  float: right;
+}
+
+.button:hover {
+  box-shadow: 0 0 2px 0 black;
+}
+
+.active {
+  color: #046E9A;
+  font-weight: bold;
+}
+
+header li {
+  margin: 50px;
+}
+
+header li a {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 22px;
+  vertical-align: bottom;
+  color: black;
+}
+
+nav li a:hover {
+  color: #046E9A;
+  font-weight: bold;
+}
+
+.content {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+}
+
+#form {
+  margin: 10%;
+}
+
+.content input {
+  text-align: center;
+  align-items: center;
+}
+
+#heading2 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  align-items: center;
+}
+
+#text1 {
+  text-align: center;
+  align-items: center;
+  margin-right: 155px;
+}
+
+#text2 {
+  text-align: center;
+  align-items: center;
+  font-weight: lighter;
+}
+
+footer {
+  margin-top: 5%;
+  background-color: #2298CA;
+  background-size: cover;
+  height: fit-content;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: normal;
+  color: black;
+  align-items: center;
+  text-align: center;
+}
+
+#icons {
+  list-style-type: none;
+  float: center;
+  align-items: center;
+  text-align: center;
+}
+
+#icons li {
+  display: inline-block;
+  margin-right: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.submit {
+  margin-left: 620px;
+}
