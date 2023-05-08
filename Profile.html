@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile VisionScan</title>
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Stylesheets\profile.css">
+    <script src="C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Scripts\profile.js"></script>
 </head>
 <body>
-    <?<php>
-        include("profile.php");
-    </php>
 
     <!-- Navigation Bar -->
     <header>
         <nav>
             <ul>
-                <li><a href = "Dashboard.html"> <img src = "C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Images\Site Logo.jpg"> </a></li>
+                <li><a href = "Dashboard.html"> <img src = "C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Stylesheets\Images\Site Logo.jpg"> </a></li>
                 <li><a href = "Dashboard.html"> Home </a></li>
                 <li><a href = "#"> About </a></li>
                 <li><a href = "#"> Contact Us </a></li>
             </ul>
             <ul>
-                <li><a href="#"><img src="C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Images\Group 14.png" align="right" class="button"></a></li>
-                <!-- Php required so that logout option is visible after hovering over the image in droupdown -->
+                <li class="dropdown"><a href="#" class="dropbtn"><img src="C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Stylesheets\Images\Group 14.png" align="right" class="button"></a>
+                    <div class="dropdown-content">
+                        <a href="Profile.html">Manage Profile</a>
+                        <a href="Home.html">Logout</a>
+                    </div>
+                </li>
+                <!-- Create a dropdown menu -->
                 </a></li>
             </ul>
         </nav>
@@ -37,8 +40,9 @@
                 <br><br>
                 <center>
                     <input type="file" id="propic" style="display:none">
-                    <img src="Images/profile.svg" alt="Upload Image" onclick="document.getElementById('propic').click()">
-                    </center>  <!-- Php required so that uploaded image is displayed here -->
+                    <img src="C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Stylesheets\Images\profile.svg" alt="Upload Image" id="dispic" onclick="uploadImage()">
+                    </center>  <!--uploaded image is displayed here *******
+                    document.getElementById('propic').click()-->
             </td>
         </tr>
 
@@ -66,7 +70,7 @@
 
         </table></td></tr>
         <tr>
-            <td> <center> <a href="Dashboard.html"><input type="image" src="Images/save changes.png" value="Submit"></a> <br><br> </center></td> <!-- Php required so that values are submitted -->
+            <td> <center><input type="image" src="C:\Users\Raven Queen\Desktop\Nishita\College\Tri-11\Capstone\Application Code\Stylesheets\Images\save changes.png" value="Submit" onclick="submit()"> <br><br> </center></td> <!-- values are submitted in firebase-->
         </tr>
     </table>
 
